@@ -94,9 +94,7 @@ figure[data-scroller] div img {
 <script>
 // lightbox script ------- //
 
-const images = document.querySelectorAll('figure[data-scroller] div img');
-const wrapper = document.querySelector('div.lightbox');
-const img = document.querySelector('div.lightbox div > img');
+const images = document.querySelectorAll('figure[data-scroller] div img'), wrapper = document.querySelector('div.lightbox'), img = document.querySelector('div.lightbox div > img');
 
 images.forEach((image) => {
   image.addEventListener('click', (e) => {
