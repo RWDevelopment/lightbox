@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <title>Hello, world!</title>
-    <style>
-    /* lightbox figure scroller */
+<style>
+/* lightbox figure scroller */
 
 figure[data-scroller] {
   overflow-x: scroll;
@@ -66,12 +66,11 @@ figure[data-scroller] div img {
   box-shadow: var(--card-box-shadow);
   opacity: 1;
 }
-    </style>
+</style>
   </head>
   <body>
     
     <main class="container">
-      
       <figure data-scroller>
         <div>
           
@@ -82,20 +81,18 @@ figure[data-scroller] div img {
           
         </div>
       </figure>
-      
     </main>
     
-    
     <!-- lightbox container -->
-      <div class="lightbox">
-        <div class="container">
-          <img loading="lazy" />
-        </div>
+    <div class="lightbox">
+      <div class="container">
+        <img loading="lazy" />
       </div>
+    </div>
     
     
-    <script>
-    // lightbox script ------- //
+<script>
+// lightbox script ------- //
 
 const images = document.querySelectorAll('figure[data-scroller] div img');
 const wrapper = document.querySelector('div.lightbox');
@@ -111,7 +108,9 @@ images.forEach((image) => {
 
 wrapper.addEventListener('click', (e) => {
   wrapper.style.display = 'none';
-});   
-  </script>
+});
+
+</script>
+
   </body>
 </html>
