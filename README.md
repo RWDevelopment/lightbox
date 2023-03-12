@@ -1,2 +1,2 @@
 # lightbox
-simple image lightbox
+simple css javascript image lightbox
