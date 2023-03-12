@@ -26,7 +26,23 @@
       <h1>Hello, world!</h1>
     </main>
     <script>
-    
+    // lightbox script ------- //
+
+const images = document.querySelectorAll('figure[data-scroller] div img');
+const wrapper = document.querySelector('div.lightbox');
+const img = document.querySelector('div.lightbox div > img');
+
+images.forEach((image) => {
+  image.addEventListener('click', (e) => {
+    e.preventDefault();
+    wrapper.style.display = 'block';
+    img.setAttribute('src', image.getAttribute('src'));
+  });   
+});
+
+wrapper.addEventListener('click', (e) => {
+  wrapper.style.display = 'none';
+});   
   </script>
   </body>
 </html>
