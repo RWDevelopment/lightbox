@@ -104,8 +104,9 @@ images.forEach((image) => {
   });   
 });
 
-wrapper.addEventListener('click', (e) => {
+wrapper.addEventListener('click', () => {
   wrapper.style.display = 'none';
+  img.setAttribute('src', '');
 });
 
 </script>
