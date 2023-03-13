@@ -97,8 +97,7 @@ figure[data-scroller] div img {
 const images = document.querySelectorAll('figure[data-scroller] div img'), wrapper = document.querySelector('div.lightbox'), img = document.querySelector('div.lightbox div > img');
 
 images.forEach((image) => {
-  image.addEventListener('click', (e) => {
-    e.preventDefault();
+  image.addEventListener('click', () => {
     wrapper.style.display = 'block';
     img.setAttribute('src', image.getAttribute('src'));
   });   
